@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+#miColor{
+    background-color: rgb(255, 255, 255);
+}
+*{
+    box-sizing: border-box;
+}
+header div img{
+    animation-name: animacion;
+    width: 2000px;
+    position:absolute;
+    animation-direction: alternate-reverse;
+    animation: animacion 1s linear infinite;
+    
+    
+}
+main{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    
+}
+img{
+    width: 100%;
+    border-radius: 15%;
+    margin-bottom: 40px;
+    
+}
+
+main img:hover{
+    border-radius:10% ;
+    transition: 1s;
+    transition-property:width;
+    width: 105%;
+}
+body div {
+    width: 44%
+}
+video{
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+
+}
+
+header a{
+    background-color: rgb(218, 105, 40) ;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: small;
+   display: block;
+   width: 150px;
+   height: 30px;
+   margin: auto;
+   line-height: 30px;
+   transition: 2s;
+  
+    }
+
+a:hover{
+    text-transform: uppercase;
+    text-decoration:none;
+    background-color: white;
+    color:rgb(218, 105, 40) ;
+    
+}
+
+p{
+    text-align: center;
+    font-family: Schibsted Grotesk, normal;
+    font-weight: 700;
+    color: rgb(218, 105, 40);
+    font-size:x-large;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+    font-family:Schibsted Grotesk, normal;
+    font-weight: 100;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+h2{
+    text-align: center;
+    font-family: Schibsted Grotesk, normal;
+    color: rgb(218, 105, 40);
+
+}
+
+footer h3 {
+    text-align: center;
+    font-weight: 300;
+    font-family: Cormorant Garamond, normal;
+    font-size: medium 500;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 30px;
+}
+
+
+footer div{
+    width: 100%;
+    background-image: linear-gradient(white,rgb(218, 105, 40));
+    background-position: center center;
+    height: 80px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+@keyframes animacion {
+
+    from{
+        transform: translate(0px);
+        border-radius: 0%;
+       
+
+    }
+    to{
+        transform: translate(200px);
+        border-radius: 0%;
+        
+    }
+   
+}
